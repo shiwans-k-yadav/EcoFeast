@@ -1,0 +1,58 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Top Div */
+.top-div {
+  background: #4a90e2;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.3rem;
+  border-radius: 10px;
+}
+
+/* Row Layout */
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+/* Left and Right Divs */
+.left-div, .right-div {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+}

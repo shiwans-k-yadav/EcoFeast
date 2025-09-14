@@ -1,0 +1,158 @@
+:root {
+  --green: #3fb36f;
+  --green-dark: #2ea05a;
+  --bg: #f4f6f9;
+  --white: #fff;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, var(--green), var(--green-dark));
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo-icon img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a,
+.btn-logout {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* avatar section */
+.profile-avatar {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 1rem auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--green);
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar-actions {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+.plus-icon, #remove-avatar {
+    background: var(--green);
+    color: white;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1;
+    transition: 0.3s;
+}
+
+.plus-icon:hover, #remove-avatar:hover {
+    background: var(--green-dark);
+}
+
+
+.username-text {
+  color: var(--green-dark);
+  font-weight: 700;
+}
+#aiResponse {
+  margin-top: 10px;
+  background: #f3f3f3;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+
+.gpt{
+  display: flex;
+  justify-content: space-between;
+}
+.gpt-img{
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 3rem;
+}
+
+.gpt-img:hover{
+  transform: scale(1.1);
+  transition: all 0.3s ease-in;
+}
+/* avatart section ends here */
+
+.ngo-section {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+#ngo-list {
+  margin-top: 10px;
+}
+
+.ngo-card {
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 5px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.btn-add {
+  background: var(--green);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-add:hover {
+  background: var(--green-dark);
+}
